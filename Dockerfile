@@ -9,4 +9,4 @@ RUN apt-get update && \
     chmod +x /check_freenas.rb && \
     gem install net-ssh
 
-ENTRYPOINT ["check_freenas.rb"]
+ENTRYPOINT ["/check_freenas.rb"]
